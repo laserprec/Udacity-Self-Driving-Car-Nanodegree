@@ -1,0 +1,15 @@
+[submodule "term1/projects/CarND-LaneLines"]
+	path = term1/projects/CarND-LaneLines
+	url = https://github.com/JohnGee96/CarND-LaneLines.git
+[submodule "term1/projects/CarND-Traffic-Sign-Classifier"]
+	path = term1/projects/CarND-Traffic-Sign-Classifier
+	url = https://github.com/JohnGee96/CarND-Traffic-Sign-Classifier.git
+[submodule "term1/projects/CarND-Behavioral-Cloning"]
+	path = term1/projects/CarND-Behavioral-Cloning
+	url = https://github.com/JohnGee96/CarND-Behavioral-Cloning.git
+[submodule "term1/projects/CarND-Advanced-Lane-Lines"]
+	path = term1/projects/CarND-Advanced-Lane-Lines
+	url = https://github.com/JohnGee96/CarND-Advanced-Lane-Lines.git
+[submodule "term1/projects/CarND-Vehicle-Detection"]
+	path = term1/projects/CarND-Vehicle-Detection
+	url = https://github.com/JohnGee96/CarND-Vehicle-Detection.git
