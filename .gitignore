@@ -4,3 +4,8 @@ CarND-Term1-Starter-Kit-Test
 .DS_Store
 *_backup
 *.code-workspace
+a.out
+*.out
+*.o
+*.so
+*.a
