@@ -1,6 +1,7 @@
 CarND-Term1-Starter-Kit
 CarND-Term1-Starter-Kit-Test
 
+.vscode/
 .DS_Store
 *_backup
 *.code-workspace
