@@ -76,7 +76,7 @@ void UKF::PredictRadarMeasurement(VectorXd *z_out, MatrixXd *S_out)
  ******************************************************************************/
 
     int n_sigma = 2 * n_aug + 1;
-    double rho, phi, rho_dot, px, py, vx, vy, v, yaw; // angle
+    double px, py, vx, vy, v, yaw; // angle
     
     //transform sigma points into measurement space
     for (int i=0; i<n_sigma; ++i) {
@@ -85,19 +85,16 @@ void UKF::PredictRadarMeasurement(VectorXd *z_out, MatrixXd *S_out)
         v = Xsig_pred(2, i);
         yaw = Xsig_pred(3, i);
         
-        rho = sqrt(px * px + py * py);
-        phi = atan2(py, px);
-        if (rho < 0.00001) {
-            std::cout << "WARNING - DIVIDE BY ZERO: rho is close to zero\n";
-            rho = 0.00001;
-        }
         vx = cos(yaw) * v;
         vy = sin(yaw) * v;
-        rho_dot = (px * vx + py * vy) / rho;
 
-        Zsig(0, i) = rho;
-        Zsig(1, i) = phi;
-        Zsig(2, i) = rho_dot;
+        Zsig(0, i) = sqrt(px * px + py * py);   // rho
+        Zsig(1, i) = atan2(py, px);             // phi
+        if (Zsig(0, i) < 0.00001) {
+            std::cout << "WARNING - DIVIDE BY ZERO: rho is close to zero\n";
+            Zsig(0, i) = 0.00001;
+        }
+        Zsig(2, i) = (px * vx + py * vy) / Zsig(0,i); // rho_dot
     }
     
     //calculate mean predicted measurement
