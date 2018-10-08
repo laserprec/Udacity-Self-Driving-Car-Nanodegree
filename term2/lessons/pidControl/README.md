@@ -4,7 +4,7 @@
 
 ![equation](./img/pid_control.png)
 
-* **prorportional:** gets a closer steering to the target direction proportional to the crosscheck error
+* **prorportional:** gets a closer steering to the target direction proportional to the cross track error
 * **Integral:** address the systematic bias of the model
 * **Derivative:** prevents steering from overshooting
 
