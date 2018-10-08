@@ -22,3 +22,6 @@
 [submodule "term2/projects/CarND-Kidnapped-Vehicle-Project"]
 	path = term2/projects/CarND-Kidnapped-Vehicle-Project
 	url = https://github.com/JohnGee96/CarND-Kidnapped-Vehicle-Project
+[submodule "term2/projects/CarND-PID-Control-Project"]
+	path = term2/projects/CarND-PID-Control-Project
+	url = git@github.com:JohnGee96/CarND-PID-Control-Project.git
