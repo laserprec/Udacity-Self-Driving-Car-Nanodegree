@@ -19,8 +19,8 @@ static const double THROT_KD = 0.0;
 // Speed Threshold
 static const double INIT_THROTTLE = .8;
 static const double BRAKE = -0.2;
-static const double CRUISE_SPEED = 60.0;
-static const double MAX_SPEED = 70.0;
+static const double CRUISE_SPEED = 30.0;
+static const double MAX_SPEED = 40.0;
 
 // For converting back and forth between radians and degrees.
 constexpr double pi() { return M_PI; }
